@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.block1 {
+    color: black;
+    grid-area: our-costumers;
+    background-color: white;
+    display: flex;
+}
+.txt1{
+    font-size: 5em;
+    font-weight: bold;
+    /*margin-left: 1em;
+    margin-top: 3em;*/
+}
+.block2 {
+    color: white;
+    grid-area: text-fiol;
+    background-color: indigo;
+}
+.block3 {
+    color: white;
+    grid-area: text-zelenskiy;
+    background-color: green;
+}
+.block4 {
+    color: white;
+    grid-area: text-yellow;
+    background-color: gold;
+}
+.block5 {
+    color: white;
+    grid-area: text-red-bird;
+    background-color: lightcoral;
+}
+.grid {
+    display: grid;
+    grid-template-areas:
+        "our-costumers our-costumers text-fiol text-zelenskiy"
+        "our-costumers our-costumers text-fiol text-yellow"
+        "our-costumers our-costumers text-red-bird text-red-bird";
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
