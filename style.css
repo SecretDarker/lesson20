@@ -8,13 +8,49 @@
     color: black;
     grid-area: our-costumers;
     background-color: white;
-    display: flex;
+    float: left;
+    display: inline;
 }
-.txt1{
-    font-size: 5em;
+.text1{
+    margin-left: 0.4em;
+    font-size: 6em;
     font-weight: bold;
-    /*margin-left: 1em;
-    margin-top: 3em;*/
+    margin-top: 2.6em;
+    height: 100px;
+}
+.text2{
+    margin: 2em;
+    height: 125px;
+    width: 80%;
+    font-size: 1.4em;
+}
+.button{
+    width: 80%;
+    height: 3em;
+    margin-left: 2em;
+    border: solid;
+    border-width: 1px;
+    border-color: gray;
+    text-align: center;
+}
+h3{
+    font-weight: 500;
+    margin-top: 0.7em;
+}
+.hrefki{
+    width:20%;
+    float: left;
+    display: inline;
+    height: 5em;
+    padding: 1em;
+    margin-top: 8em;
+}
+a{
+    font-size: 1.3em;
+    padding: 1em;
+}
+.picture{
+    background: url("./image.jpg") no-repeat;
 }
 .block2 {
     color: white;
@@ -23,7 +59,7 @@
 }
 .block3 {
     color: white;
-    grid-area: text-zelenskiy;
+    grid-area: text-green;
     background-color: green;
 }
 .block4 {
@@ -39,7 +75,7 @@
 .grid {
     display: grid;
     grid-template-areas:
-        "our-costumers our-costumers text-fiol text-zelenskiy"
+        "our-costumers our-costumers text-fiol text-green"
         "our-costumers our-costumers text-fiol text-yellow"
         "our-costumers our-costumers text-red-bird text-red-bird";
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
